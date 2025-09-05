@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Bot Username Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>Telegram Bot Username Generator</h1>
+            </div>
+            <p class="subtitle">Generate powerful alphanumeric usernames for your Telegram bots</p>
+        </header>
+
+        <div class="generator-card">
+            <div class="card-header">
+                <h2><i class="fas fa-cogs"></i> Username Generator</h2>
+            </div>
+            
+            <div class="controls">
+                <div class="input-group">
+                    <label for="lengthSlider">Username Length:</label>
+                    <div class="slider-container">
+                        <input type="range" id="lengthSlider" min="3" max="20" value="8" class="slider">
+                        <span id="lengthValue" class="length-display">8</span>
+                    </div>
+                </div>
+                
+                <button id="generateBtn" class="generate-btn">
+                    <i class="fas fa-magic"></i>
+                    Generate Username
+                </button>
+            </div>
+
+            <div class="output-section">
+                <div class="output-label">Generated Username:</div>
+                <div class="output-container">
+                    <div id="generatedUsername" class="username-output">Click generate to create username</div>
+                    <button id="copyBtn" class="copy-btn" disabled>
+                        <i class="fas fa-copy"></i>
+                        Copy
+                    </button>
+                </div>
+                <div id="copyFeedback" class="copy-feedback"></div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure</h3>
+                <p>Strong alphanumeric combinations</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast</h3>
+                <p>Instant generation</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-robot"></i>
+                <h3>Bot Ready</h3>
+                <p>Perfect for Telegram bots</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Telegram Bot Username Generator. Made with <i class="fas fa-heart"></i> for the community.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
